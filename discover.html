@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音直播 - 发现页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="device">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">14:30</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        
+        <!-- 主容器 -->
+        <div class="discover-container">
+            <!-- 顶部搜索栏 -->
+            <div style="padding: 15px; display: flex; gap: 10px; align-items: center;">
+                <div style="flex: 1; background-color: rgba(255, 255, 255, 0.1); border-radius: 20px; display: flex; align-items: center; padding: 8px 15px;">
+                    <i class="fas fa-search" style="color: var(--gray); margin-right: 10px;"></i>
+                    <span style="color: var(--gray);">搜索直播、商品或用户</span>
+                </div>
+                <i class="fas fa-qrcode" style="font-size: 22px;"></i>
+            </div>
+            
+            <!-- 分类标签 -->
+            <div class="category-tabs">
+                <div class="category-tab active">推荐</div>
+                <div class="category-tab">关注</div>
+                <div class="category-tab">美妆</div>
+                <div class="category-tab">服饰</div>
+                <div class="category-tab">数码</div>
+                <div class="category-tab">食品</div>
+                <div class="category-tab">家居</div>
+            </div>
+            
+            <!-- 直播流网格 -->
+            <div class="stream-grid">
+                <div class="stream-card">
+                    <img src="https://images.unsplash.com/photo-1526816229784-65d5d54ac8e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="直播封面" class="stream-thumbnail">
+                    <div class="live-badge" style="position: absolute; top: 10px; left: 10px;">直播中</div>
+                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 3px 8px; font-size: 12px;">
+                        <i class="fas fa-eye"></i> 1.5万
+                    </div>
+                    <div class="stream-info">
+                        <h3 class="stream-title">夏季新款甜美穿搭分享</h3>
+                        <div class="streamer-name">@时尚小姐姐</div>
+                    </div>
+                </div>
+                
+                <div class="stream-card">
+                    <img src="https://images.unsplash.com/photo-1588144822902-745b63cd6650?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="直播封面" class="stream-thumbnail">
+                    <div class="live-badge" style="position: absolute; top: 10px; left: 10px;">直播中</div>
+                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 3px 8px; font-size: 12px;">
+                        <i class="fas fa-eye"></i> 8.2万
+                    </div>
+                    <div class="stream-info">
+                        <h3 class="stream-title">数码新品体验馆</h3>
+                        <div class="streamer-name">@科技探索者</div>
+                    </div>
+                </div>
+                
+                <div class="stream-card">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="直播封面" class="stream-thumbnail">
+                    <div class="live-badge" style="position: absolute; top: 10px; left: 10px;">直播中</div>
+                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 3px 8px; font-size: 12px;">
+                        <i class="fas fa-eye"></i> 2.3万
+                    </div>
+                    <div class="stream-info">
+                        <h3 class="stream-title">彩妆教程：夏日清透妆容</h3>
+                        <div class="streamer-name">@美妆达人</div>
+                    </div>
+                </div>
+                
+                <div class="stream-card">
+                    <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="直播封面" class="stream-thumbnail">
+                    <div class="live-badge" style="position: absolute; top: 10px; left: 10px;">直播中</div>
+                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 3px 8px; font-size: 12px;">
+                        <i class="fas fa-eye"></i> 3.9万
+                    </div>
+                    <div class="stream-info">
+                        <h3 class="stream-title">家居新品大促销</h3>
+                        <div class="streamer-name">@家居达人</div>
+                    </div>
+                </div>
+                
+                <div class="stream-card">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="直播封面" class="stream-thumbnail">
+                    <div class="live-badge" style="position: absolute; top: 10px; left: 10px;">直播中</div>
+                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 3px 8px; font-size: 12px;">
+                        <i class="fas fa-eye"></i> 6.4万
+                    </div>
+                    <div class="stream-info">
+                        <h3 class="stream-title">美食品鉴会</h3>
+                        <div class="streamer-name">@美食大厨</div>
+                    </div>
+                </div>
+                
+                <div class="stream-card">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="直播封面" class="stream-thumbnail">
+                    <div class="live-badge" style="position: absolute; top: 10px; left: 10px;">直播中</div>
+                    <div style="position: absolute; top: 10px; right: 10px; background-color: rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 3px 8px; font-size: 12px;">
+                        <i class="fas fa-eye"></i> 1.8万
+                    </div>
+                    <div class="stream-info">
+                        <h3 class="stream-title">秋季新款外套抢先体验</h3>
+                        <div class="streamer-name">@潮流前线</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <div class="tab-item active">
+                <i class="fas fa-home tab-icon"></i>
+                <span>首页</span>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-compass tab-icon"></i>
+                <span>探索</span>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-plus-circle tab-icon" style="font-size: 32px; margin-top: -5px; color: var(--primary-color);"></i>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-comment-alt tab-icon"></i>
+                <span>消息</span>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-user tab-icon"></i>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音直播 - 个人中心</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="device">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">14:30</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        
+        <!-- 个人中心容器 -->
+        <div class="profile-container">
+            <!-- 顶部导航 -->
+            <div style="display: flex; justify-content: space-between; padding: 15px; align-items: center;">
+                <div style="font-weight: 600; font-size: 18px;">个人中心</div>
+                <div>
+                    <i class="fas fa-qrcode" style="font-size: 18px; margin-right: 20px;"></i>
+                    <i class="fas fa-cog" style="font-size: 18px;"></i>
+                </div>
+            </div>
+            
+            <!-- 个人信息头部 -->
+            <div class="profile-header">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="用户头像" class="user-avatar">
+                <div class="user-name">喜欢看直播的小明</div>
+                <div class="user-id">抖音号：28493021</div>
+                
+                <!-- 个人统计数据 -->
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <div class="stat-value">258</div>
+                        <div class="stat-label">关注</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">1024</div>
+                        <div class="stat-label">粉丝</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">6592</div>
+                        <div class="stat-label">获赞</div>
+                    </div>
+                </div>
+                
+                <!-- 个人操作按钮 -->
+                <div class="profile-buttons">
+                    <button class="profile-button primary-button">
+                        <i class="fas fa-edit" style="margin-right: 5px;"></i> 编辑资料
+                    </button>
+                    <button class="profile-button secondary-button">
+                        <i class="fas fa-share-alt" style="margin-right: 5px;"></i> 分享
+                    </button>
+                </div>
+            </div>
+            
+            <!-- 内容标签切换 -->
+            <div style="display: flex; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <div style="flex: 1; text-align: center; padding: 15px; border-bottom: 2px solid var(--primary-color); font-weight: 600;">订单</div>
+                <div style="flex: 1; text-align: center; padding: 15px; color: var(--gray);">收藏</div>
+                <div style="flex: 1; text-align: center; padding: 15px; color: var(--gray);">历史</div>
+            </div>
+            
+            <!-- 订单列表 -->
+            <div class="profile-sections">
+                <div class="section-title">近期订单</div>
+                
+                <div class="order-item">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="产品图片" class="product-image">
+                    <div class="product-details">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 5px;">超薄5G智能手机 Pro</div>
+                            <div style="font-size: 12px; color: var(--gray); margin-bottom: 5px;">黑色 | 256GB | x1</div>
+                            <div class="product-price">¥4999</div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--primary-color);">
+                            待发货
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-item">
+                    <img src="https://images.unsplash.com/photo-1625895197185-efcec01cffe0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="产品图片" class="product-image">
+                    <div class="product-details">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 5px;">无线降噪耳机</div>
+                            <div style="font-size: 12px; color: var(--gray); margin-bottom: 5px;">白色 | x1</div>
+                            <div class="product-price">¥899</div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--primary-color);">
+                            待发货
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-item">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="产品图片" class="product-image">
+                    <div class="product-details">
+                        <div>
+                            <div style="font-weight: 600; margin-bottom: 5px;">蓝牙音箱</div>
+                            <div style="font-size: 12px; color: var(--gray); margin-bottom: 5px;">黑色 | x1</div>
+                            <div class="product-price">¥329</div>
+                        </div>
+                        <div style="font-size: 12px; color: var(--gray);">
+                            已完成
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; padding: 20px; color: var(--gray); font-size: 14px;">
+                    查看更多订单 <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="section-title">最近关注的主播</div>
+                
+                <div style="display: flex; overflow-x: auto; gap: 15px; padding: 10px 0;">
+                    <div style="display: flex; flex-direction: column; align-items: center; min-width: 60px;">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="主播头像" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 5px;">
+                        <div style="font-size: 12px; max-width: 60px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">科技探索者</div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; min-width: 60px;">
+                        <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="主播头像" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 5px;">
+                        <div style="font-size: 12px; max-width: 60px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">时尚小姐姐</div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; min-width: 60px;">
+                        <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="主播头像" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 5px;">
+                        <div style="font-size: 12px; max-width: 60px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">美食大厨</div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; min-width: 60px;">
+                        <img src="https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="主播头像" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 5px;">
+                        <div style="font-size: 12px; max-width: 60px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">美妆达人</div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; min-width: 60px;">
+                        <img src="https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="主播头像" style="width: 60px; height: 60px; border-radius: 50%; margin-bottom: 5px;">
+                        <div style="font-size: 12px; max-width: 60px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">潮流前线</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <div class="tab-item">
+                <i class="fas fa-home tab-icon"></i>
+                <span>首页</span>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-compass tab-icon"></i>
+                <span>探索</span>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-plus-circle tab-icon" style="font-size: 32px; margin-top: -5px; color: var(--primary-color);"></i>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-comment-alt tab-icon"></i>
+                <span>消息</span>
+            </div>
+            <div class="tab-item active">
+                <i class="fas fa-user tab-icon"></i>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

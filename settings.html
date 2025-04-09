@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抖音直播 - 设置</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="device">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-time">14:30</div>
+            <div class="status-bar-icons">
+                <i class="fas fa-signal"></i>
+                <i class="fas fa-wifi"></i>
+                <i class="fas fa-battery-full"></i>
+            </div>
+        </div>
+        
+        <!-- 设置容器 -->
+        <div class="settings-container">
+            <!-- 顶部导航 -->
+            <div style="display: flex; align-items: center; padding: 15px; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+                <i class="fas fa-arrow-left" style="font-size: 18px; margin-right: 20px;"></i>
+                <div style="font-weight: 600; font-size: 18px;">设置</div>
+            </div>
+            
+            <!-- 账户设置 -->
+            <div class="settings-group">
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-user settings-icon"></i>
+                        <span>账户与安全</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-bell settings-icon"></i>
+                        <span>消息通知</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-lock settings-icon"></i>
+                        <span>隐私设置</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <!-- 通用设置 -->
+            <div class="settings-group">
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-globe settings-icon"></i>
+                        <span>语言</span>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <span style="color: var(--gray); margin-right: 10px;">简体中文</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-moon settings-icon"></i>
+                        <span>深色模式</span>
+                    </div>
+                    <div style="width: 50px; height: 26px; background-color: var(--primary-color); border-radius: 13px; position: relative; padding: 2px;">
+                        <div style="position: absolute; right: 2px; top: 2px; width: 22px; height: 22px; background-color: white; border-radius: 50%;"></div>
+                    </div>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-database settings-icon"></i>
+                        <span>清除缓存</span>
+                    </div>
+                    <div style="color: var(--gray);">128MB</div>
+                </div>
+            </div>
+            
+            <!-- 支付与钱包 -->
+            <div class="settings-group">
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-wallet settings-icon"></i>
+                        <span>我的钱包</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-credit-card settings-icon"></i>
+                        <span>支付方式</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-map-marker-alt settings-icon"></i>
+                        <span>收货地址</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            
+            <!-- 其他设置 -->
+            <div class="settings-group">
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-headset settings-icon"></i>
+                        <span>帮助与反馈</span>
+                    </div>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                
+                <div class="settings-item">
+                    <div class="settings-label">
+                        <i class="fas fa-info-circle settings-icon"></i>
+                        <span>关于</span>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <span style="color: var(--gray); margin-right: 10px;">版本 9.2.0</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 退出登录按钮 -->
+            <div style="margin: 30px 15px; text-align: center;">
+                <button style="width: 100%; padding: 15px; background-color: rgba(255, 255, 255, 0.1); border: none; color: var(--primary-color); border-radius: 10px; font-weight: 600; font-size: 16px;">
+                    退出登录
+                </button>
+            </div>
+        </div>
+        
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <div class="tab-item">
+                <i class="fas fa-home tab-icon"></i>
+                <span>首页</span>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-compass tab-icon"></i>
+                <span>探索</span>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-plus-circle tab-icon" style="font-size: 32px; margin-top: -5px; color: var(--primary-color);"></i>
+            </div>
+            <div class="tab-item">
+                <i class="fas fa-comment-alt tab-icon"></i>
+                <span>消息</span>
+            </div>
+            <div class="tab-item active">
+                <i class="fas fa-user tab-icon"></i>
+                <span>我的</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
