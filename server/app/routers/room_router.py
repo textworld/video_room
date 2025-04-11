@@ -1,36 +1,26 @@
 from typing import List
-from fastapi import APIRouter, Depends
-from sqlalchemy.orm import Session # Assuming SQLAlchemy usage
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
 
-from ..models.room import Room # Import the response model
-from ..services.room_service import get_living_rooms # Import the service function
-# Assuming you have a dependency function to get the DB session
-# from ..dependencies import get_db # Example import for DB session dependency
+from ..models.room import Room
+from ..services.room_service import get_living_rooms, get_room_by_id
+from ..database import get_db
 
-# Placeholder for the database dependency function
-# Replace this with your actual dependency injection logic
-def get_db_placeholder():
-    print("Getting DB session (placeholder)...")
-    # In a real app, this would yield a SQLAlchemy Session
-    # For example:
-    # from ..database import SessionLocal # Assuming SessionLocal is your session factory
-    # db = SessionLocal()
-    # try:
-    #     yield db
-    # finally:
-    #     db.close()
-    yield None # Placeholder yield
+router = APIRouter(prefix="/rooms", tags=["Rooms"])
 
-router = APIRouter(
-    prefix="/rooms",
-    tags=["rooms"], # Tag for Swagger UI grouping
-    responses={404: {"description": "Not found"}}, # Default response for not found
-)
-
-@router.get("/living", response_model=List[Room])
-async def read_living_rooms(db: Session = Depends(get_db_placeholder)):
+@router.get("/", response_model=List[Room])
+async def get_all_living_rooms(db: Session = Depends(get_db)):
     """
-    Retrieve all rooms currently in 'living' status.
+    获取所有直播中的房间。
     """
-    living_rooms = get_living_rooms(db) # Call the service function
-    return living_rooms 
+    return get_living_rooms(db)
+
+@router.get("/{room_id}", response_model=Room)
+async def get_room(room_id: str, db: Session = Depends(get_db)):
+    """
+    通过ID获取房间信息。
+    """
+    room = get_room_by_id(db, room_id)
+    if not room:
+        raise HTTPException(status_code=404, detail=f"未找到ID为{room_id}的房间")
+    return room 
